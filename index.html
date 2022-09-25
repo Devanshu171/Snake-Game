@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        text-align: center;
+        font-family: sans-serif;
+        color: white;
+        font-size: 1.5rem;
+        height: 600px;
+      }
+      h1,
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      #canvas {
+        border: 20px solid rgb(255, 251, 0);
+        background-color: #333;
+      }
+      button {
+        position: absolute;
+        right: 80px;
+        top: 30px;
+        height: 40px;
+        /* width: 30px; */
+        font-size: 17px;
+        font-weight: 600;
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 6px;
+      }
+    </style>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <h1>Snake Game</h1>
+    <div>Score:<span id="score">0 </span></div>
+    <div>
+      HighScore:
+      <span id="highScore">0</span>
+    </div>
+
+    <canvas id="canvas" height="600px" width="1000px"></canvas>
+  </body>
+</html>
